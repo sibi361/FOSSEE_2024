@@ -1,16 +1,871 @@
----
-
----
-
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta
+            http-equiv="Cache-Control"
+            content="no-cache, no-store, must-revalidate"
+        />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="-1" />
+        <meta name="description" content="Mapathon" />
+        <meta name="author" content="FOSSEE web team" />
+        <meta
+            name="keywords"
+            content="Hackathon, GIS, QGIS, competition, Hardware-IoT, National Level Open Hardware-IoT based GeoSpecial Hackathon"
+        />
+        <meta
+            name="keywords"
+            content="IIT Bombay,GeoSpecial solutions, Mapping, Open source, software, GIS"
+        />
+        <link rel="icon" href="/static/cms/uploads/images/favicon.png" />
+        <title>
+            National Level Open Hardware-IoT based GeoSpecial Hackathon
+        </title>
+        <link
+            href="/static/cms/bootstrap-4.5.0/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link href="/static/cms/fontawesome/css/all.css" rel="stylesheet" />
+        <!--   <link href="css/custom.css?ver=1.4" rel="stylesheet"> -->
+        <link href="/static/cms/uploads/css/custom.css" rel="stylesheet" />
+        <script is:inline src="/static/cms/js/jquery-3.2.1.min.js"></script>
+        <script is:inline src="/static/cms/js/popper.min.js"></script>
+        <script is:inline src="/static/cms/bootstrap-4.5.0/js/bootstrap.min.js"
+        ></script>
+        <script is:inline src="/static/cms/js/holder.min.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=analytics-code"
+        ></script>
+        <script is:inline>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "analytics-code");
+        </script>
+    </head>
+    <body>
+        <!-- Section for social media links starts -->
+        <div class="icon-bar">
+            <a
+                href="https://www.facebook.com/FOSSEENMEICT/"
+                class="facebook text-white"
+                target="_blank"><i class="fab fa-facebook-square"></i></a
+            >
+            <a
+                href="https://www.instagram.com/fossee_nmeict/"
+                class="instagram"
+                target="_blank"><i class="fab fa-instagram"></i></a
+            >
+            <a
+                href="https://twitter.com/FOSSEE/"
+                class="twitter"
+                target="_blank"><i class="fab fa-twitter-square"></i></a
+            >
+            <a
+                href="https://www.linkedin.com/company/fossee-iitb/"
+                class="linkedin"
+                target="_blank"><i class="fab fa-linkedin"></i></a
+            >
+        </div>
+        <!-- Section for social media links ends -->
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top"
+            ><i class="fa fa-angle-up" aria-hidden="true"></i></button
+        >
+
+        <div class="banner-content">
+            <div id="top-logo-placeholder" class="container-sm">
+                <div class="d-flex justify-content-center">
+                    <div class="p-2 pt-4 pb-1">
+                        <a href="http://iitb.ac.in/" target="_blank">
+                            <img
+                                src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/iitb-logo.png"
+                                class="img-fluid logos"
+                                alt="IITB"
+                            />
+                        </a>
+                    </div>
+                    <div class="p-2 pt-4 pb-1">
+                        <a href="https://fossee.in" target="_blank">
+                            <img
+                                src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/fossee-logo.png"
+                                class="img-fluid logos"
+                                alt="FOSSEE"
+                            />
+                        </a>
+                    </div>
+
+                    <div class="p-2 pt-4 pb-1">
+                        <a href="http://www.rudra.iitb.ac.in/" target="_blank">
+                            <img
+                                src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/rudra-logo.png"
+                                class="img-fluid logos"
+                                alt="Rudra"
+                            />
+                        </a>
+                    </div>
+                    <div class="p-2 pt-4 pb-1">
+                        <a href="https://www.iittp.ac.in/" target="_blank">
+                            <img
+                                src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/iit-tirupati.png"
+                                class="img-fluid logos"
+                                alt="IIT Tirupati"
+                            />
+                        </a>
+                    </div>
+                    <div class="p-2 pt-4 pb-1">
+                        <a href="https://iittnif.com/" target="_blank">
+                            <img
+                                src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/navavishkaar.png"
+                                class="img-fluid logos"
+                                alt="IITTNiF"
+                            />
+                        </a>
+                    </div>
+                    <div class="p-2 pt-4 pb-1">
+                        <a href="https://nmicps.in/" target="_blank">
+                            <img
+                                src="https://iot-gis-hackathon.fossee.org/static/cms/uploads/images/NM-ICPS-logo1.png"
+                                class="img-fluid logos"
+                                alt="NMICPS"
+                            />
+                        </a>
+                    </div>
+                    <div class="p-2 pt-4 pb-1">
+                        <a href="#" target="">
+                            <img
+                                src="https://iot-gis-hackathon.fossee.in/static/cms/uploads/images/icfoss-logo.png"
+                                class="img-fluid logos big-img"
+                                alt="icfoss"
+                                style="@media screen and (min-width:480px;){
+.big-img{
+width:20%;
+}
+}"
+                            />
+                        </a>
+                    </div>
+
+                    <!--<div class="p-2 pt-1 pb-1">
+            <img src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/tn-logo.png" class="img-fluid" alt="TN Logo">
+      </div>                      
+      <div class="p-2 pt-1 pb-1">      
+            <img src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/tsdc-logo.png" class="img-fluid" alt="TSDC Logo">
+      </div>
+      <div class="p-2 pt-3 pb-1">  
+         <a href="https://www.g20.org/en/" target="_blank">
+            <img src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/g20-logo.png" class="img-fluid" alt="G20">
+         </a>
+      </div>
+      <div class="p-2 pt-4 pb-1">  
+         <a href="https://amritmahotsav.nic.in/" target="_blank">
+            <img src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/amrit-mahotsav.png" class="img-fluid" alt="Amrit Mahotsav" >
+         </a>
+      </div>-->
+                    <!-- <div class="p-2 pt-1 pb-1">
+         <a href="https://spoken-tutorial.org" target="_blank">
+            <img src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/st-logo.png"
+                     class="img-fluid logos" alt="Spoken Tutorial">
+         </a>
+      </div>-->
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg site-header sticky-top py-1">
+            <a class="navbar-brand" href="#"
+                ><span class="navbar-toggler-icon"></span></a
+            >
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon" style="color:#f50000"
+                    ><i class="fas fa-align-justify"></i></span
+                >
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mx-auto navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources">Resources</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedule">Schedule</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#register">Register</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#partners-and-organisers"
+                            >Partners</a
+                        >
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#contact-us">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="base-content">
+            <div class="view pt-5 pb-5" id="front">
+                <div class="row d-flex align-items-center text-center">
+                    <div class="col-md-1"></div>
+
+                    <div class="col-md-6 mx-1 order-md-3">
+                        <!-- <img src="right.png" id="left-img"> -->
+                        <h2 style="color: #000080ff;">
+                            IIT Bombay-FOSSEE-GIS/OSHW, IITTNiF & ICFOSS
+                            presents
+                        </h2>
+                        <img
+                            src="https://iot-gis-hackathon.fossee.org/static/cms/uploads/images/right-img.png"
+                            id="right-img"
+                        />
+                        <div class="m-3 dates p-3">
+                            <!--<p class="important-dates"><strong>Registration opens: </strong>March 22, 2023</p>
+              <p class="important-dates"><strong>Registration closes: </strong>April 30, 2024</p>
+             <p class="important-dates"><strong>Hackathon start date : </strong>To be announced</p>-->
+                            <!--<p class="important-dates"><strong>Problem Statement Announcement + Submission Opens: </strong>12th Nov</p>
+              <p class="important-dates"><strong>Submission Closes:</strong> 28th Nov</p>
+              <p class="important-dates"><strong>Result Declaration:</strong> 14th Dec</p>-->
+                            <a href="/#register"
+                                ><button class="custom-btn btn-register"
+                                    >Register</button
+                                >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mx-1 order-md-1">
+                        <img
+                            src="https://iot-gis-hackathon.fossee.org/static/cms/uploads/images/indiamap.png"
+                            id="left-img"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <!-- End front Section -->
+
+            <!--introduction-->
+
+            <section id="intro" class="container-lg">
+                <div class="d-md-flex flex-md-equal w-100 mt-md-4 pl-md-3">
+                    <div class="mr-md-3 overflow-hidden">
+                        <div class="py-3">
+                            <h3 class="display-5 section-title">
+                                Introducing the Hackathon: Unlocking Innovation
+                                for a Better World
+                            </h3>
+                        </div>
+                        <p class="section-title-2 text-center">
+                            Welcome to the Open Source Hardware IoT GIS
+                            Hackathon!
+                        </p>
+                        <div class="mx-auto bd-highlight text-justify px-3">
+                            <p class="text-justify">
+                                Welcome to the National Level Open Hardware-IoT
+                                Geospatial Hackathon, a stage where innovation
+                                knows no boundaries. This premier event brings
+                                together visionaries, tech enthusiasts, and
+                                problem solvers from across the nation to
+                                harness the power of open hardware, the Internet
+                                of Things (IoT), and geospatial technology. Get
+                                ready to explore uncharted possibilities,
+                                collaborate on real-world challenges, and make a
+                                significant impact on our world.
+                            </p>
+
+                            <h4><span><strong>Significance:</strong></span></h4>
+                            <ul style="list-style-type: square;">
+                                In a world where technology shapes our daily
+                                lives, the significance of this hackathon cannot
+                                be overstated. Here, participants have the
+                                opportunity to redefine the boundaries of what's
+                                possible. By merging open source principles with
+                                cutting-edge technologies, we aim to:
+                                <li>
+                                    Solve Real-World Problems: Tackle critical
+                                    issues such as environmental sustainability,
+                                    disaster management, precision agriculture,
+                                    and more. Your solutions can change lives
+                                    and protect our planet.
+                                </li>
+                                <li>
+                                    Foster Innovation: Innovation thrives when
+                                    knowledge is shared openly. By promoting
+                                    open source hardware and IoT, we empower you
+                                    to push the boundaries of creativity and
+                                    discovery.
+                                </li>
+                                <li>
+                                    Create Collaborative Communities: Through
+                                    this hackathon, we build communities of
+                                    like-minded individuals passionate about
+                                    making a difference. Together, we can
+                                    achieve more than any one of us can alone.
+                                </li>
+                                <li>
+                                    Empower Future Leaders: Whether you're a
+                                    student, a professional, or an enthusiast,
+                                    this hackathon is a launchpad for your
+                                    ideas. It's a chance to develop your skills,
+                                    showcase your talents, and make your mark on
+                                    the world.
+                                </li>
+                            </ul>
+                            <p>
+                                Join us on this extraordinary journey, where
+                                innovation knows no bounds. Together, let's turn
+                                ideas into actions and make a lasting impact on
+                                society and the environment. The Open Source
+                                Hardware IoT GIS Hackathon is your stage to
+                                shine, and the world is waiting to witness your
+                                brilliance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-------------ABOUT--------------->
+            <section id="about" class="container-lg">
+                <div class="d-md-flex flex-md-equal w-100 pl-md-3">
+                    <div class="mr-md-3 overflow-hidden">
+                        <div class="py-3">
+                            <h3 class="display-5 section-title">Purpose</h3>
+                        </div>
+                        <div class="mx-auto bd-highlight text-justify px-3">
+                            <p class="text-justify">
+                                <p>
+                                    This hackathon is more than just a
+                                    competition; it's a platform for innovators,
+                                    creators, and visionaries to come together
+                                    and pioneer solutions for a brighter future.
+                                    Our purpose is to harness the power of open
+                                    source hardware, the Internet of Things
+                                    (IoT), and Geographic Information Systems
+                                    (GIS) to address some of the world's most
+                                    pressing challenges.
+                                </p>
+                                <p>
+                                    The FOSSEE project, IIT Bombay promotes the
+                                    use of Free/ Libre Open Source Software in
+                                    academia and Industry. The FOSSEE
+                                    project&nbsp; is funded through the National
+                                    Mission on Education through ICT (NMEICT),
+                                    Ministry of Education, Government of India.
+                                    The FOSSEE-GIS team manages the overall
+                                    coordination of the "IIT Bombay FOSSEE GIS
+                                    Internship in Geospatial Dashboard Design
+                                    and Implementation".&nbsp;
+                                </p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="register" class="container-lg">
+                <div class="d-md-flex flex-md-equal w-100 pl-md-3">
+                    <div class="mr-md-3 overflow-hidden">
+                        <div class="py-3">
+                            <h3 class="display-5 section-title">
+                                Registration
+                            </h3>
+                        </div>
+                        <div class="mx-auto text-center bd-highlightpx-3">
+                            Please click on the following button to register
+                            yourself for the Hackathon
+                            <p class="my-3">
+                                <a
+                                    href="https://forms.gle/aVopwiwmRM35FXQT8"
+                                    target="_blank"
+                                    ><button class="custom-btn btn-register"
+                                        >Register</button
+                                    >
+                                </a>
+                            </p>
+                            <!--  <figure><img src="https://iot-gis-hackathon.fossee.in/static/cms/uploads/images/QR_Code.png"
+                       class="img-fluid" alt="QRcode" style="height:50%; width: 150px;">
+                    <p style="margin-top: 10px">
+                       Scan this QR Code to register
+                    </p>
+                 </figure> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!---------partners and organisers----------->
+            <section id="partners-and-organisers" class="container-lg">
+                <div class="d-md-flex flex-md-equal w-100 pl-md-3">
+                    <div class="pt-3 overflow-hidden">
+                        <div class="py-3">
+                            <h4 class="display-5 section-title">
+                                Partners and Organisers
+                            </h4>
+                        </div>
+                        <div>
+                            <p class="text-justify">
+                                <strong>Technical Partner:</strong>
+                                &nbsp;The Rural Data Research and Analysis (RuDRA)
+                                Lab, IIT Bombay is India's first HPC-powered data
+                                center dedicated to Rural Development.
+                            </p>
+                        </div>
+
+                        <div
+                            class="container text-center my-3"
+                            style="height:100px;"
+                        >
+                            <div
+                                id="recipeCarousel"
+                                class="carousel slide w-100"
+                                data-ride="carousel"
+                            >
+                                <div
+                                    class="carousel-inner w-100"
+                                    role="listbox"
+                                >
+                                    <div
+                                        class="carousel-item row no-gutters active"
+                                    >
+                                        <div class="col-3 float-left">
+                                            <a
+                                                href="http://iitb.ac.in/"
+                                                target="_blank"
+                                            >
+                                                <img
+                                                    src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/iitb-logo.png"
+                                                    class="img-fluid"
+                                                    alt="IITB"
+                                                    height="100px"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="col-3 float-left">
+                                            <a
+                                                href="https://fossee.in"
+                                                target="_blank"
+                                            >
+                                                <img
+                                                    src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/fossee-logo.png"
+                                                    class="img-fluid"
+                                                    alt="FOSSEE"
+                                                    height="100px"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="col-3 float-left">
+                                            <a
+                                                href="https://spoken-tutorial.org/"
+                                                target="_blank"
+                                            >
+                                                <img
+                                                    src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/st-logo.png"
+                                                    class="img-fluid"
+                                                    alt="Spoken Tutorial"
+                                                    width="30%"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="col-3 float-left">
+                                            <img
+                                                class="img-fluid"
+                                                alt="icfoss"
+                                                src="https://iot-gis-hackathon.fossee.in/static/cms/uploads/images/icfoss-logo.png"
+                                                width="60%"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item row no-gutters">
+                                        <div class="col-3 float-left">
+                                            <a
+                                                href="http://www.rudra.iitb.ac.in/"
+                                                target="_blank"
+                                            >
+                                                <img
+                                                    src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/rudra-logo.png"
+                                                    class="img-fluid"
+                                                    alt="Rudra"
+                                                    width="32%"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="col-3 float-left">
+                                            <a
+                                                href="https://www.iittp.ac.in/"
+                                                target="_blank"
+                                            >
+                                                <img
+                                                    src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/iit-tirupati.png"
+                                                    class="img-fluid"
+                                                    alt="IIT Tirupati"
+                                                    width="48%"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="col-3 float-left">
+                                            <a
+                                                href="https://iittnif.com/"
+                                                target="_blank"
+                                            >
+                                                <img
+                                                    src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/navavishkaar.png"
+                                                    class="img-fluid"
+                                                    alt="IITTNiF"
+                                                    width="75%"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="col-3 float-left">
+                                            <a
+                                                href="https://nmicps.in/"
+                                                target="_blank"
+                                            >
+                                                <img
+                                                    src="https://iot-gis-hackathon.fossee.org/static/cms/uploads/images/NM-ICPS-logo1.png"
+                                                    class="img-fluid"
+                                                    alt="NMICPS"
+                                                    width="25%"
+                                                />
+                                            </a>
+                                        </div>
+
+                                        <!--<div class="col-3 float-left"><img class="img-fluid" src="http://via.placeholder.com/350x280/bbb?text=8"></div>-->
+                                    </div>
+                                </div>
+                                <a
+                                    class="carousel-control-prev text-danger"
+                                    href="#recipeCarousel"
+                                    role="button"
+                                    data-slide="prev"
+                                >
+                                    <span
+                                        class="carousel-control-prev-icon"
+                                        aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a
+                                    class="carousel-control-next"
+                                    href="#recipeCarousel"
+                                    role="button"
+                                    data-slide="next"
+                                >
+                                    <span
+                                        class="carousel-control-next-icon"
+                                        aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="text-justify">
+                                <strong> Organizing Partner:</strong>
+                                &nbsp;The IIT Tirupati Navavishkar I-Hub Foundation
+                                is the Technology Innovation Hub specializing in
+                                Positioning and Precision Technologies, funded through
+                                the National Mission on Interdisciplinary Cyber-Physical
+                                System (NM-ICPS), Department of Science and Technology,
+                                Government of India.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact-us" class="container-lg">
+                <div class="container">
+                    <div class="d-md-flex flex-md-equal w-100 mb-md-3 pl-md-3">
+                        <div class="mr-md-3 overflow-hidden">
+                            <div class="py-3">
+                                <h3 class="display-5 text-center section-title">
+                                    Core Team & Contact Us <i
+                                        class="fa fa-phone"></i>
+                                </h3>
+                            </div>
+                            <div class="row mb-2">
+                                <div
+                                    class="mx-auto text-center col-md-5 border"
+                                    style="border-radius: 21px 21px 21px 21px; font-size: 12pt"
+                                >
+                                    <p>
+                                        <span
+                                            ><strong
+                                                >Prof. Kannan Moudgalya</strong
+                                            ></span
+                                        >
+                                    </p>
+                                    <p><span>P.I., FOSSEE</span></p>
+                                    <p>
+                                        <span
+                                            >Indian Institute of Technology
+                                            Bombay</span
+                                        >
+                                    </p>
+                                </div>
+                                <div
+                                    class="mx-auto text-center col-md-5 border"
+                                    style="border-radius: 21px 21px 21px 21px; font-size: 12pt"
+                                >
+                                    <p>
+                                        <span
+                                            ><strong
+                                                >Prof. Pennan Chinnasamy</strong
+                                            ></span
+                                        >
+                                    </p>
+                                    <p>
+                                        <span
+                                            >Co.P.I., FOSSEE & PiC, The Rural
+                                            Data Research & Analysis (RuDRA)
+                                            Lab, IIT Bombay</span
+                                        >
+                                    </p>
+                                    <p>
+                                        <span
+                                            >Indian Institute of Technology
+                                            Bombay</span
+                                        >
+                                    </p>
+                                </div>
+                                <div
+                                    class="mx-auto text-center col-md-5 border"
+                                    style="border-radius: 25px 25px 25px 25px; font-size: 12pt"
+                                >
+                                    <p>
+                                        <span
+                                            ><strong
+                                                >Prof. Roshan Srivastav</strong
+                                            ></span
+                                        >
+                                    </p>
+                                    <p>
+                                        <span
+                                            >Project Director, IIT Tirupati
+                                            Navavishkar I-Hub Foundation
+                                            (NM-ICPS, DST)</span
+                                        >
+                                    </p>
+                                    <p>
+                                        <span
+                                            >Indian Institute of Technology
+                                            Tirupati</span
+                                        >
+                                    </p>
+                                </div>
+                                <div
+                                    class="mx-auto text-center col-md-5 border"
+                                    style="border-radius: 21px 21px 21px 21px; font-size: 12pt"
+                                >
+                                    <p>
+                                        <span
+                                            ><strong
+                                                >Mr. Rajesh Kushalkar</strong
+                                            ></span
+                                        >
+                                    </p>
+                                    <p>
+                                        <span
+                                            >Senior Manager, FOSSEE-Open
+                                            Hardware</span
+                                        >
+                                    </p>
+                                    <p>
+                                        <span
+                                            >Indian Institute of Technology
+                                            Bombay</span
+                                        >
+                                    </p>
+                                </div>
+                                <div
+                                    class="mx-auto pb-1 text-center col-md-7 border"
+                                    style="border-radius: 23px 23px 23px 23px; font-size: 11pt"
+                                >
+                                    <p>
+                                        <span
+                                            ><strong
+                                                >Mr. Mohamed Kasim Khan</strong
+                                            ></span
+                                        >
+                                    </p>
+                                    <p>
+                                        <span
+                                            >National Coordinator, FOSSEE-GIS</span
+                                        >
+                                    </p>
+                                    <p>
+                                        <span
+                                            >National Mission on Education
+                                            through ICT, Ministry of Education,
+                                            Government of India</span
+                                        >
+                                    </p>
+                                    <p>
+                                        <span
+                                            >Indian Institute of Technology
+                                            Bombay</span
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center">
+                        Please write to us in case of any queries regarding the
+                        Hackathon at:
+                    </p>
+                    <div class="mx-auto py-2 text-center">
+                        <h5>
+                            <i class="far fa-envelope"></i> Email :<a
+                                href="mailto:contact-oshw@fossee.in "
+                                >contact-oshw[at]fossee[dot]in
+                            </a>
+                        </h5>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-content">
+                <section id="footer" class="site-footer">
+                    <footer class="container-fluid py-5 site-footer pl-5 pr-4">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h5>About</h5>
+                                <ul class="list-unstyled text-small">
+                                    <li>
+                                        <a
+                                            class="text-muted"
+                                            href="https://www.iitb.ac.in/"
+                                            target="_blank"
+                                            ><span style="color: white;"
+                                                >IIT Bombay</span
+                                            ></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="text-muted"
+                                            href="https://fossee.in/"
+                                            target="_blank"
+                                            ><span style="color: white;"
+                                                >FOSSEE</span
+                                            ></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="text-muted"
+                                            href="https://www.iittnif.org"
+                                            target="_blank"
+                                            ><span style="color: white;"
+                                                >IITTNiF</span
+                                            ></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="text-muted"
+                                            href="https://spoken-tutorial.org"
+                                            target="_blank"
+                                            ><span style="color: white;"
+                                                >Spoken Tutorial</span
+                                            ></a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3">
+                                <h5>Resources</h5>
+                                <ul class="list-unstyled text-small">
+                                    <li>
+                                        <a
+                                            class="text-muted"
+                                            href="https://qgis.org/en/site/forusers/download"
+                                            target="_blank"
+                                            ><span style="color: black;"
+                                                >QGIS</span
+                                            ></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="text-muted"
+                                            href="https://spoken-tutorial.org/tutorial-search/?search_foss=QGIS&search_language=English"
+                                            target="_blank"
+                                            ><span style="color: black;"
+                                                >Spoken Tutorials - FOSSEE -
+                                                QGIS</span
+                                            ></a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--  <div class="col-sm-3">
+               <h5>Socail Media</h5>
+               <ul class="list-unstyled text-small">
+                  <li><a href="https://www.facebook.com/FOSSEENMEICT/" class="facebook text-white" target="_blank"><i
+                     class="fab fa-facebook"></i></a>
+                  </li><br>
+                  <li><a href="https://twitter.com/FOSSEENMEICT/" class="twitter" target="_blank"><i
+                     class="fab fa-twitter"></i></a>
+                  </li>
+               </ul>
+            </div>
+            <div class="col-sm-3"> -->
+                            <small class="d-block mb-3 text-muted">
+                                <a
+                                    rel="license"
+                                    href="http://creativecommons.org/licenses/by-sa/4.0/"
+                                    ><img
+                                        alt="Creative Commons License"
+                                        style="border-width:0"
+                                        src="https://iitb-isro-aicte-mapathon.fossee.in/static/cms/uploads/images/88x31.png"
+                                    /></a
+                                ><br /><span style="color: black;"
+                                    >This work is licensed under a
+                                </span><a
+                                    rel="license"
+                                    style="color:black"
+                                    href="http://creativecommons.org/licenses/by-sa/4.0/"
+                                    >Creative Commons Attribution-ShareAlike 4.0
+                                    International License
+                                </a>.
+                            </small>
+                        </div>
+                    </footer>
+                </section>
+            </div>
+        </div>
+    </body>
 </html>

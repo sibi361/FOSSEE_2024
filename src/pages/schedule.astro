@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta
+            http-equiv="Cache-Control"
+            content="no-cache, no-store, must-revalidate"
+        />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="-1" />
+        <meta name="description" content="Mapathon" />
+        <meta name="author" content="FOSSEE web team" />
+        <meta
+            name="keywords"
+            content="Hackathon, GIS, QGIS, competition, Hardware-IoT, National Level Open Hardware-IoT based GeoSpecial Hackathon"
+        />
+        <meta
+            name="keywords"
+            content="IIT Bombay,GeoSpecial solutions, Mapping, Open source, software, GIS"
+        />
+        <link rel="icon" href="/static/cms/uploads/images/favicon.png" />
+        <title>
+            National Level Open Hardware-IoT based GeoSpecial Hackathon
+        </title>
+        <link
+            href="/static/cms/bootstrap-4.5.0/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link href="/static/cms/fontawesome/css/all.css" rel="stylesheet" />
+        <!--   <link href="css/custom.css?ver=1.4" rel="stylesheet"> -->
+        <link href="/static/cms/uploads/css/custom.css" rel="stylesheet" />
+        <script is:inline src="/static/cms/js/jquery-3.2.1.min.js"></script>
+        <script is:inline src="/static/cms/js/popper.min.js"></script>
+        <script is:inline src="/static/cms/bootstrap-4.5.0/js/bootstrap.min.js"
+        ></script>
+        <script is:inline src="/static/cms/js/holder.min.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=analytics-code"
+        ></script>
+        <script is:inline>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "analytics-code");
+        </script>
+    </head>
+    <body>
+        <!-- Section for social media links starts -->
+        <div class="icon-bar">
+            <a
+                href="https://www.facebook.com/FOSSEENMEICT/"
+                class="facebook text-white"
+                target="_blank"><i class="fab fa-facebook-square"></i></a
+            >
+            <a
+                href="https://www.instagram.com/fossee_nmeict/"
+                class="instagram"
+                target="_blank"><i class="fab fa-instagram"></i></a
+            >
+            <a
+                href="https://twitter.com/FOSSEE/"
+                class="twitter"
+                target="_blank"><i class="fab fa-twitter-square"></i></a
+            >
+            <a
+                href="https://www.linkedin.com/company/fossee-iitb/"
+                class="linkedin"
+                target="_blank"><i class="fab fa-linkedin"></i></a
+            >
+        </div>
+        <!-- Section for social media links ends -->
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top"
+            ><i class="fa fa-angle-up" aria-hidden="true"></i></button
+        >
+
+        <div class="banner-content">
+            <div id="top-logo-placeholder" class="container-sm">
+                <div class="d-flex justify-content-center">
+                    <div class="p-2 pt-4 pb-1">
+                        <a href="http://iitb.ac.in/" target="_blank">
+                            <img
+                                src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/iitb-logo.png"
+                                class="img-fluid logos"
+                                alt="IITB"
+                            />
+                        </a>
+                    </div>
+                    <div class="p-2 pt-4 pb-1">
+                        <a href="https://fossee.in" target="_blank">
+                            <img
+                                src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/fossee-logo.png"
+                                class="img-fluid logos"
+                                alt="FOSSEE"
+                            />
+                        </a>
+                    </div>
+
+                    <div class="p-2 pt-4 pb-1">
+                        <a href="http://www.rudra.iitb.ac.in/" target="_blank">
+                            <img
+                                src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/rudra-logo.png"
+                                class="img-fluid logos"
+                                alt="Rudra"
+                            />
+                        </a>
+                    </div>
+                    <div class="p-2 pt-4 pb-1">
+                        <a href="https://www.iittp.ac.in/" target="_blank">
+                            <img
+                                src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/iit-tirupati.png"
+                                class="img-fluid logos"
+                                alt="IIT Tirupati"
+                            />
+                        </a>
+                    </div>
+                    <div class="p-2 pt-4 pb-1">
+                        <a href="https://iittnif.com/" target="_blank">
+                            <img
+                                src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/navavishkaar.png"
+                                class="img-fluid logos"
+                                alt="IITTNiF"
+                            />
+                        </a>
+                    </div>
+                    <div class="p-2 pt-4 pb-1">
+                        <a href="https://nmicps.in/" target="_blank">
+                            <img
+                                src="https://iot-gis-hackathon.fossee.org/static/cms/uploads/images/NM-ICPS-logo1.png"
+                                class="img-fluid logos"
+                                alt="NMICPS"
+                            />
+                        </a>
+                    </div>
+                    <div class="p-2 pt-4 pb-1">
+                        <a href="#" target="">
+                            <img
+                                src="https://iot-gis-hackathon.fossee.in/static/cms/uploads/images/icfoss-logo.png"
+                                class="img-fluid logos big-img"
+                                alt="icfoss"
+                                style="@media screen and (min-width:480px;){
+.big-img{
+width:20%;
+}
+}"
+                            />
+                        </a>
+                    </div>
+
+                    <!--<div class="p-2 pt-1 pb-1">
+            <img src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/tn-logo.png" class="img-fluid" alt="TN Logo">
+      </div>                      
+      <div class="p-2 pt-1 pb-1">      
+            <img src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/tsdc-logo.png" class="img-fluid" alt="TSDC Logo">
+      </div>
+      <div class="p-2 pt-3 pb-1">  
+         <a href="https://www.g20.org/en/" target="_blank">
+            <img src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/g20-logo.png" class="img-fluid" alt="G20">
+         </a>
+      </div>
+      <div class="p-2 pt-4 pb-1">  
+         <a href="https://amritmahotsav.nic.in/" target="_blank">
+            <img src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/amrit-mahotsav.png" class="img-fluid" alt="Amrit Mahotsav" >
+         </a>
+      </div>-->
+                    <!-- <div class="p-2 pt-1 pb-1">
+         <a href="https://spoken-tutorial.org" target="_blank">
+            <img src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/st-logo.png"
+                     class="img-fluid logos" alt="Spoken Tutorial">
+         </a>
+      </div>-->
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg site-header sticky-top py-1">
+            <a class="navbar-brand" href="#"
+                ><span class="navbar-toggler-icon"></span></a
+            >
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon" style="color:#f50000"
+                    ><i class="fas fa-align-justify"></i></span
+                >
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mx-auto navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources">Resources</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedule">Schedule</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#register">Register</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#partners-and-organisers"
+                            >Partners</a
+                        >
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#contact-us">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="base-content">
+            <h3 class="display-5 section-title text-center bg-light">
+                National Level Open Hardware-IoT Geospatial Hackathon
+            </h3>
+
+            <div class="main-timeline bg-light">
+                <div class="week">
+                    <h2>
+                        Week 1: Kickoff and Orientation [March 01 to 07, 2024]
+                    </h2>
+                    <div class="day">
+                        <h3>
+                            Working Day 1: Registration and Welcome Ceremony
+                        </h3>
+                    </div>
+                    <div class="day">
+                        <h3>
+                            Working Day 2: Opening Keynote and Theme
+                            Announcement
+                        </h3>
+                    </div>
+                    <div class="day">
+                        <h3>
+                            Working Day 3: Workshop 1 - Introduction to Open
+                            Hardware and IoT
+                        </h3>
+                    </div>
+                    <div class="day">
+                        <h3>
+                            Working Day 4: Workshop 2 - Geospatial Technology
+                            Fundamentals
+                        </h3>
+                    </div>
+                    <div class="day">
+                        <h3>
+                            Working Day 5: Team Formation and Ideation Session
+                        </h3>
+                    </div>
+                    <div class="day">
+                        <h3>
+                            Working Day 6-7: Self-Study and Project
+                            Brainstorming
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="week">
+                    <h2>
+                        Week 2: Deep Dive into IoT and GIS [March 08 to 14,
+                        2024]
+                    </h2>
+                    <div class="day">
+                        <h3>
+                            Working Day 8: Workshop 3 - IoT Sensors and Data
+                            Collection
+                        </h3>
+                    </div>
+                    <div class="day">
+                        <h3>
+                            Working Day 9: Workshop 4 - Advanced GIS
+                            Applications
+                        </h3>
+                    </div>
+                    <div class="day">
+                        <h3>Working Day 10: Hacking Session Begins</h3>
+                    </div>
+                    <div class="day">
+                        <h3>
+                            Working Day 11-14: Guided Hacking, Team Check-Ins,
+                            and Progress Reports
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="week">
+                    <h2>
+                        Week 3: Prototyping and Development [March 15 to 21,
+                        2024]
+                    </h2>
+                    <div class="day">
+                        <h3>
+                            Working Day 15: Workshop 5 - Data Visualization with
+                            GIS
+                        </h3>
+                    </div>
+                    <div class="day">
+                        <h3>
+                            Working Day 16: Workshop 6 - Open Source Hardware
+                            Prototyping
+                        </h3>
+                    </div>
+                    <div class="day">
+                        <h3>
+                            Working Day 17-21: Dedicated Hacking and Prototype
+                            Development
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="week">
+                    <h2>
+                        Week 4: Final Touches and Presentations [March 22 to
+                        April 05, 2024]
+                    </h2>
+                    <div class="day">
+                        <h3>Working Day 22: Workshop 7 - IoT Data Analysis</h3>
+                    </div>
+                    <div class="day">
+                        <h3>
+                            Working Day 23-25: Final Project Development and
+                            Testing
+                        </h3>
+                    </div>
+                    <div class="day">
+                        <h3>Working Day 26: Project Submissions</h3>
+                    </div>
+                    <div class="day">
+                        <h3>
+                            Working Day 27-28: Team Rehearsals and Presentation
+                            Prep
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="week">
+                    <h2>Week 5: Grand Finale and Awards</h2>
+                    <div class="day">
+                        <h3>
+                            Working Day 29: Presentations by Hackathon Teams
+                        </h3>
+                    </div>
+                    <div class="day">
+                        <h3>
+                            April 12, 2023 (tentative): Judging and Results
+                            Declaration
+                        </h3>
+                    </div>
+                    <div class="day">
+                        <h3>
+                            Date to be announced: Awards Ceremony and
+                            Celebration
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-content">
+                <section id="footer" class="site-footer">
+                    <footer class="container-fluid py-5 site-footer pl-5 pr-4">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h5>About</h5>
+                                <ul class="list-unstyled text-small">
+                                    <li>
+                                        <a
+                                            class="text-muted"
+                                            href="https://www.iitb.ac.in/"
+                                            target="_blank"
+                                            ><span style="color: white;"
+                                                >IIT Bombay</span
+                                            ></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="text-muted"
+                                            href="https://fossee.in/"
+                                            target="_blank"
+                                            ><span style="color: white;"
+                                                >FOSSEE</span
+                                            ></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="text-muted"
+                                            href="https://www.iittnif.org"
+                                            target="_blank"
+                                            ><span style="color: white;"
+                                                >IITTNiF</span
+                                            ></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="text-muted"
+                                            href="https://spoken-tutorial.org"
+                                            target="_blank"
+                                            ><span style="color: white;"
+                                                >Spoken Tutorial</span
+                                            ></a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3">
+                                <h5>Resources</h5>
+                                <ul class="list-unstyled text-small">
+                                    <li>
+                                        <a
+                                            class="text-muted"
+                                            href="https://qgis.org/en/site/forusers/download"
+                                            target="_blank"
+                                            ><span style="color: black;"
+                                                >QGIS</span
+                                            ></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="text-muted"
+                                            href="https://spoken-tutorial.org/tutorial-search/?search_foss=QGIS&search_language=English"
+                                            target="_blank"
+                                            ><span style="color: black;"
+                                                >Spoken Tutorials - FOSSEE -
+                                                QGIS</span
+                                            ></a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--  <div class="col-sm-3">
+               <h5>Socail Media</h5>
+               <ul class="list-unstyled text-small">
+                  <li><a href="https://www.facebook.com/FOSSEENMEICT/" class="facebook text-white" target="_blank"><i
+                     class="fab fa-facebook"></i></a>
+                  </li><br>
+                  <li><a href="https://twitter.com/FOSSEENMEICT/" class="twitter" target="_blank"><i
+                     class="fab fa-twitter"></i></a>
+                  </li>
+               </ul>
+            </div>
+            <div class="col-sm-3"> -->
+                            <small class="d-block mb-3 text-muted">
+                                <a
+                                    rel="license"
+                                    href="http://creativecommons.org/licenses/by-sa/4.0/"
+                                    ><img
+                                        alt="Creative Commons License"
+                                        style="border-width:0"
+                                        src="https://iitb-isro-aicte-mapathon.fossee.in/static/cms/uploads/images/88x31.png"
+                                    /></a
+                                ><br /><span style="color: black;"
+                                    >This work is licensed under a
+                                </span><a
+                                    rel="license"
+                                    style="color:black"
+                                    href="http://creativecommons.org/licenses/by-sa/4.0/"
+                                    >Creative Commons Attribution-ShareAlike 4.0
+                                    International License
+                                </a>.
+                            </small>
+                        </div>
+                    </footer>
+                </section>
+            </div>
+        </div>
+    </body>
+    .astro
+</html>
