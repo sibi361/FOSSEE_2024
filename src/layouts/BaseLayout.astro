@@ -1,6 +1,6 @@
 ---
 import Meta from "../components/Meta.astro";
-import SocialMedia from "../components/SocialMedia.astro";
+import SocialMediaStrip from "../components/SocialMediaStrip.astro";
 import TopBanner from "../components/TopBanner.astro";
 import Navigation from "../components/Navigation.astro";
 import Poster from "../components/Poster.astro";
@@ -16,7 +16,7 @@ const { showPoster } = Astro.props;
     </head>
 
     <body>
-        <SocialMedia />
+        <SocialMediaStrip />
 
         <button onclick="topFunction()" id="myBtn" title="Go to top"
             ><i class="fa fa-angle-up" aria-hidden="true"></i></button
