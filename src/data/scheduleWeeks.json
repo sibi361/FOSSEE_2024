@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Week 1: Kickoff and Orientation [March 01 to 07, 2024]",
+    "days": [
+      "Working Day 1: Registration and Welcome Ceremony",
+      "Working Day 2: Opening Keynote and Theme Announcement",
+      "Working Day 3: Workshop 1 - Introduction to Open Hardware and IoT",
+      "Working Day 4: Workshop 2 - Geospatial Technology Fundamentals",
+      "Working Day 5: Team Formation and Ideation Session",
+      "Working Day 6-7: Self-Study and Project Brainstorming"
+    ]
+  },
+  {
+    "title": "Week 2: Deep Dive into IoT and GIS [March 08 to 14, 2024]",
+    "days": [
+      "Working Day 8: Workshop 3 - IoT Sensors and Data Collection",
+      "Working Day 9: Workshop 4 - Advanced GIS Applications",
+      "Working Day 10: Hacking Session Begins",
+      "Working Day 11-14: Guided Hacking, Team Check-Ins, and Progress Reports"
+    ]
+  },
+  {
+    "title": "Week 3: Prototyping and Development [March 15 to 21, 2024]",
+    "days": [
+      "Working Day 15: Workshop 5 - Data Visualization with GIS",
+      "Working Day 16: Workshop 6 - Open Source Hardware Prototyping",
+      "Working Day 17-21: Dedicated Hacking and Prototype Development"
+    ]
+  },
+  {
+    "title": "Week 4: Final Touches and Presentations [March 22 to April 05, 2024]",
+    "days": [
+      "Working Day 22: Workshop 7 - IoT Data Analysis",
+      "Working Day 23-25: Final Project Development and Testing",
+      "Working Day 26: Project Submissions",
+      "Working Day 27-28: Team Rehearsals and Presentation Prep"
+    ]
+  },
+  {
+    "title": "Week 5: Grand Finale and Awards",
+    "days": [
+      "Working Day 29: Presentations by Hackathon Teams",
+      "April 12, 2023 (tentative): Judging and Results Declaration",
+      "Date to be announced: Awards Ceremony and Celebration"
+    ]
+  }
+]

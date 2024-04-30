@@ -1,0 +1,102 @@
+[
+    {
+      "title": "FOSSEE and Spoken Tutorial",
+      "links": [
+        {
+          "text": "Arduino Tutorial Series by Spoken Tutorial",
+          "url": "https://spoken-tutorial.org/tutorial-search/?search_foss=Arduino&search_language=English"
+        },
+        {
+          "text": "FLOSS-Arduino books teach Arduino control via open-source software",
+          "url": "https://floss-arduino.fossee.in/"
+        }
+      ]
+    },
+    {
+      "title": "Soil Nutrients Monitoring and Precision Agriculture",
+      "links": [
+        {
+          "text": "Water Your Garden with IoT - Soil Moisture Sensors",
+          "url": "https://www.youtube.com/watch?v=pgGpuws7f9o"
+        },
+        {
+          "text": "New Blynk IOT Smart Plant Monitoring System",
+          "url": "https://www.youtube.com/watch?v=PTJ9sAk2c2I"
+        }
+      ]
+    },
+    {
+      "title": "Weather Station",
+      "links": [
+        {
+          "text": "DIY Smart Home Weather Station - Wind, Rain, Temperature, Pressure, Humidity, Ligh",
+          "url": "https://www.youtube.com/watch?v=snCp0TqrER4"
+        },
+        {
+          "text": "Arduino Wireless Weather Station Project",
+          "url": "https://www.youtube.com/watch?v=l3-y371RlI4"
+        },
+        {
+          "text": "LoRa Based Wireless Weather Station using Arduino and ESP32",
+          "url": "https://www.youtube.com/watch?v=Nw392q1Sg4M"
+        }
+      ]
+    },
+    {
+      "title": "Air Quality and Noise Pollution Level",
+      "links": [
+        {
+          "text": "Air Quality Monitoring and Alert System using Arduino with MQ135",
+          "url": "https://www.youtube.com/watch?v=SCXteaUVICw"
+        },
+        {
+          "text": "IoT based Noise & Air quality Monitoring using blynk IoT | New Automation Tab update in Blynk",
+          "url": "https://www.youtube.com/watch?v=p3-0mWkOFBk"
+        }
+      ]
+    },
+    {
+      "title": "Asset Tracking",
+      "links": [
+        {
+          "text": " IOT Asset Tracking System",
+          "url": "https://www.youtube.com/watch?v=zFn487G2pY8"
+        },
+        {
+          "text": "Arduino Gps And Gsm Based location Tracking System | Women Safety Device Small Version",
+          "url": "https://www.youtube.com/watch?v=rdvZpwV9A18"
+        }
+      ]
+    },
+    {
+      "title": "Global Warming",
+      "links": [
+        {
+          "text": "Smart Grid: How IoT fights climate change (Kelsey Breseman)",
+          "url": "https://www.youtube.com/watch?v=0SulU4QM334"
+        }
+      ]
+    },
+    {
+      "title": "Disaster Management",
+      "links": [
+        {
+          "text": "Geospatial data for disaster management at ITC",
+          "url": "https://www.youtube.com/watch?v=dYG7GsqcCMM"
+        }
+      ]
+    },
+    {
+      "title": "Vehicle Detection and Intelligent Transportation",
+      "links": [
+        {
+          "text": "Intelligent Transport Systems made in KOREA English Version 22'",
+          "url": "https://www.youtube.com/watch?v=H_JhcBTgwPo"
+        },
+        {
+          "text": "Connected Vehicle: The Future of Transportation",
+          "url": "https://www.youtube.com/watch?v=Q8Cn47L8FRQ"
+        }
+      ]
+    }
+  ]
