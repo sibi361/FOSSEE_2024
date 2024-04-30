@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Prof",
+        "name": "Kannan Moudgalya",
+        "designation": "Principal Investigator, FOSSEE, Spoken Tutorial, NVLI",
+        "institute": "Indian Institute of Technology Bombay"
+    },
+    {
+        "title": "Prof",
+        "name": "Pennan Chinnasamy",
+        "designation": "Co.P.I., FOSSEE & PiC, The Rural Data Research & Analysis (RuDRA) Lab, IIT Bombay",
+        "institute": "Indian Institute of Technology Bombay"
+    },
+    {
+        "title": "Prof",
+        "name": "Roshan Srivastav",
+        "designation": "Project Director, IIT Tirupati Navavishkar I-Hub Foundation (NM-ICPS, DST)",
+        "institute": "Indian Institute of Technology Tirupati"
+    },
+    {
+        "title": "Mr",
+        "name": "Rajesh Kushalkar",
+        "designation": "Senior Manager, FOSSEE-Open Source Hardware (OSHW)",
+        "institute": "Indian Institute of Technology Bombay"
+    },
+    {
+        "title": "Dr",
+        "name": "Sunil T T",
+        "designation": "Director",
+        "institute": "ICFOSS"
+    },
+    {
+        "title": "Dr",
+        "name": "Srinivasan Ravindran",
+        "designation": "Program Head, FOSS Business Solutions",
+        "institute": "ICFOSS"
+    },
+    {
+        "title": "Mr",
+        "name": "Shafeek P M",
+        "designation": "Technical Coordinator - IoT",
+        "institute": "ICFOSS"
+    },
+    {
+        "title": "Mr",
+        "name": "Jayakumar K S",
+        "designation": "Manager, Incubation & FOSS Business Solutions",
+        "institute": "ICFOSS"
+    },
+    {
+        "title": "Mr",
+        "name": "Mohamed Kasim Khan",
+        "designation": "National Coordinator, FOSSEE-GIS & GIS-IoT Hackathon",
+        "institute": "National Mission on Education through ICT, Ministry of Education, Government of India\n\nIndian Institute of Technology Bombay"
+    }
+]

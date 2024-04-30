@@ -1,0 +1,57 @@
+---
+import team from "../../data/team.json";
+---
+
+<section id="contact-us" class="container-lg">
+    <div class="container">
+        <div class="d-md-flex flex-md-equal w-100 mb-md-3 pl-md-3">
+            <div class="mr-md-3 overflow-hidden">
+                <div class="py-3">
+                    <h3 class="display-5 text-center section-title">
+                        Core Team & Contact Us <i class="fa fa-phone"></i>
+                    </h3>
+                </div>
+                <div class="row mb-2">
+                    {
+                        team.map((member, i) => (
+                            <>
+                                <div
+                                    class="mx-auto text-center col-md-5 border"
+                                    style="border-radius: 21px 21px 21px 21px; font-size: 12pt"
+                                >
+                                    <p>
+                                        <span>
+                                            <strong>
+                                                {member.title}. {member.name}
+                                            </strong>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <span>{member.designation}</span>
+                                    </p>
+                                    <p>
+                                        <span>{member.institute}</span>
+                                    </p>
+                                </div>
+                            </>
+                        ))
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="text-center">
+        Please write to us in case of any queries regarding the Hackathon at:
+    </p>
+    <div class="mx-auto py-2 text-center">
+        <h5>
+            <i class="far fa-envelope"></i> Email:
+            <a href="mailto:rajesh@cse.iitb.ac.in"
+                >rajesh[at]cse[dot]iitb[dot]ac[dot]in;
+            </a>
+            <a href="mailto:mohamedkasim@iitb.ac.in"
+                >mohamedkasim[at]iitb[dot]ac[dot]in
+            </a>
+        </h5>
+    </div>
+</section>

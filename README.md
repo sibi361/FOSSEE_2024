@@ -22,11 +22,11 @@ All commands are run from the root of the project, from a terminal:
 │   └── components/
 │       └── homepage/
 │           └── About.astro
-│           └── Contact.astro
 │           └── FAQs.astro
 │           └── Introduction.astro
 │           └── Partners.astro
 │           └── Register.astro
+│           └── TeamAndContact.astro
 │       └── Footer.astro
 │       └── Meta.astro
 │       └── Navigation.astro
@@ -37,6 +37,7 @@ All commands are run from the root of the project, from a terminal:
 │       └── faqs.json
 │       └── resources.json
 │       └── scheduleWeeks.json
+│       └── team.json
 │   └── layouts/
 │       └── BaseLayout.astro
 │   └── pages/
