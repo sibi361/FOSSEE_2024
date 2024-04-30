@@ -226,7 +226,7 @@ section.right{
   /* height: 200vh; */
    /* height: 65vh; */
    background-color:#f2f6e7ff ;
-  /* background-image: url('https://iot-gis-hackathon.fossee.org/static/cms/uploads/images/webtop-1.jpg'); */
+  /* background-image: url('/static/cms/uploads/images/webtop-1.jpg'); */
   overflow: hidden;
   position: relative;
   /* background-size:1920px; */
