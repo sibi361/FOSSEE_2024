@@ -1,671 +1,317 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        <meta
-            http-equiv="Cache-Control"
-            content="no-cache, no-store, must-revalidate"
-        />
-        <meta http-equiv="Pragma" content="no-cache" />
-        <meta http-equiv="Expires" content="-1" />
-        <meta name="description" content="Mapathon" />
-        <meta name="author" content="FOSSEE web team" />
-        <meta
-            name="keywords"
-            content="Hackathon, GIS, QGIS, competition, Hardware-IoT, National Level Open Hardware-IoT based GeoSpecial Hackathon"
-        />
-        <meta
-            name="keywords"
-            content="IIT Bombay,GeoSpecial solutions, Mapping, Open source, software, GIS"
-        />
-        <link rel="icon" href="/static/cms/uploads/images/favicon.png" />
-        <title>
-            National Level Open Hardware-IoT based GeoSpecial Hackathon
-        </title>
-        <link
-            href="/static/cms/bootstrap-4.5.0/css/bootstrap.min.css"
-            rel="stylesheet"
-        />
-        <link href="/static/cms/fontawesome/css/all.css" rel="stylesheet" />
-        <!--   <link href="css/custom.css?ver=1.4" rel="stylesheet"> -->
-        <link href="/static/cms/uploads/css/custom.css" rel="stylesheet" />
-        <script is:inline src="/static/cms/js/jquery-3.2.1.min.js"></script>
-        <script is:inline src="/static/cms/js/popper.min.js"></script>
-        <script is:inline src="/static/cms/bootstrap-4.5.0/js/bootstrap.min.js"
-        ></script>
-        <script is:inline src="/static/cms/js/holder.min.js"></script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=analytics-code"
-        ></script>
-        <script is:inline>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
-            gtag("config", "analytics-code");
-        </script>
-    </head>
-    <body>
-        <!-- Section for social media links starts -->
-        <div class="icon-bar">
-            <a
-                href="https://www.facebook.com/FOSSEENMEICT/"
-                class="facebook text-white"
-                target="_blank"><i class="fab fa-facebook-square"></i></a
-            >
-            <a
-                href="https://www.instagram.com/fossee_nmeict/"
-                class="instagram"
-                target="_blank"><i class="fab fa-instagram"></i></a
-            >
-            <a
-                href="https://twitter.com/FOSSEE/"
-                class="twitter"
-                target="_blank"><i class="fab fa-twitter-square"></i></a
-            >
-            <a
-                href="https://www.linkedin.com/company/fossee-iitb/"
-                class="linkedin"
-                target="_blank"><i class="fab fa-linkedin"></i></a
-            >
-        </div>
-        <!-- Section for social media links ends -->
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const showPoster = false;
+---
 
-        <button onclick="topFunction()" id="myBtn" title="Go to top"
-            ><i class="fa fa-angle-up" aria-hidden="true"></i></button
-        >
-
-        <div class="banner-content">
-            <div id="top-logo-placeholder" class="container-sm">
-                <div class="d-flex justify-content-center">
-                    <div class="p-2 pt-4 pb-1">
-                        <a href="http://iitb.ac.in/" target="_blank">
-                            <img
-                                src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/iitb-logo.png"
-                                class="img-fluid logos"
-                                alt="IITB"
-                            />
-                        </a>
-                    </div>
-                    <div class="p-2 pt-4 pb-1">
-                        <a href="https://fossee.in" target="_blank">
-                            <img
-                                src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/fossee-logo.png"
-                                class="img-fluid logos"
-                                alt="FOSSEE"
-                            />
-                        </a>
-                    </div>
-
-                    <div class="p-2 pt-4 pb-1">
-                        <a href="http://www.rudra.iitb.ac.in/" target="_blank">
-                            <img
-                                src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/rudra-logo.png"
-                                class="img-fluid logos"
-                                alt="Rudra"
-                            />
-                        </a>
-                    </div>
-                    <div class="p-2 pt-4 pb-1">
-                        <a href="https://www.iittp.ac.in/" target="_blank">
-                            <img
-                                src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/iit-tirupati.png"
-                                class="img-fluid logos"
-                                alt="IIT Tirupati"
-                            />
-                        </a>
-                    </div>
-                    <div class="p-2 pt-4 pb-1">
-                        <a href="https://iittnif.com/" target="_blank">
-                            <img
-                                src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/navavishkaar.png"
-                                class="img-fluid logos"
-                                alt="IITTNiF"
-                            />
-                        </a>
-                    </div>
-                    <div class="p-2 pt-4 pb-1">
-                        <a href="https://nmicps.in/" target="_blank">
-                            <img
-                                src="https://iot-gis-hackathon.fossee.org/static/cms/uploads/images/NM-ICPS-logo1.png"
-                                class="img-fluid logos"
-                                alt="NMICPS"
-                            />
-                        </a>
-                    </div>
-                    <div class="p-2 pt-4 pb-1">
-                        <a href="#" target="">
-                            <img
-                                src="https://iot-gis-hackathon.fossee.in/static/cms/uploads/images/icfoss-logo.png"
-                                class="img-fluid logos big-img"
-                                alt="icfoss"
-                                style="@media screen and (min-width:480px;){
-.big-img{
-width:20%;
-}
-}"
-                            />
-                        </a>
-                    </div>
-
-                    <!--<div class="p-2 pt-1 pb-1">
-            <img src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/tn-logo.png" class="img-fluid" alt="TN Logo">
-      </div>                      
-      <div class="p-2 pt-1 pb-1">      
-            <img src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/tsdc-logo.png" class="img-fluid" alt="TSDC Logo">
-      </div>
-      <div class="p-2 pt-3 pb-1">  
-         <a href="https://www.g20.org/en/" target="_blank">
-            <img src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/g20-logo.png" class="img-fluid" alt="G20">
-         </a>
-      </div>
-      <div class="p-2 pt-4 pb-1">  
-         <a href="https://amritmahotsav.nic.in/" target="_blank">
-            <img src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/amrit-mahotsav.png" class="img-fluid" alt="Amrit Mahotsav" >
-         </a>
-      </div>-->
-                    <!-- <div class="p-2 pt-1 pb-1">
-         <a href="https://spoken-tutorial.org" target="_blank">
-            <img src="https://iitb-fossee-mapathon.fossee.in/static/cms/uploads/images/st-logo.png"
-                     class="img-fluid logos" alt="Spoken Tutorial">
-         </a>
-      </div>-->
+<BaseLayout showPoster={showPoster}>
+    <div class="container pb-4 bg-light">
+        <div class="section-title">Resources</div>
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingEight">
+                    <h2 class="mb-0">
+                        <button
+                            class="btn btn-link btn-block text-left"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseEight"
+                            aria-expanded="true"
+                            aria-controls="collapseEight"
+                        >
+                            FOSSEE and Spoken Tutorial
+                        </button>
+                    </h2>
                 </div>
-            </div>
-        </div>
-        <nav class="navbar navbar-expand-lg site-header sticky-top py-1">
-            <a class="navbar-brand" href="#"
-                ><span class="navbar-toggler-icon"></span></a
-            >
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon" style="color:#f50000"
-                    ><i class="fas fa-align-justify"></i></span
+
+                <div
+                    id="collapseEight"
+                    class="collapse show"
+                    aria-labelledby="headingEight"
+                    data-parent="#accordionExample"
                 >
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto mx-auto navbar-right">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="/#about">About</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="resources">Resources</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="schedule">Schedule</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="/#register">Register</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="/#partners-and-organisers"
-                            >Partners</a
-                        >
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="/#contact-us">Contact Us</a>
-                    </li>
-                </ul>
+                    <div class="card-body">
+                        <p class="text-info">
+                            1. <a
+                                class="text-info"
+                                href="https://spoken-tutorial.org/tutorial-search/?search_foss=Arduino&search_language=English"
+                                >Arduino Tutorial Series by Spoken Tutorial</a
+                            ><br />
+                            2. <a
+                                class="text-info"
+                                href="https://floss-arduino.fossee.in/"
+                                >FLOSS-Arduino books teach Arduino control via
+                                open-source software</a
+                            >
+                        </p>
+                    </div>
+                </div>
             </div>
-        </nav>
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button
+                            class="btn btn-link btn-block text-left collapsed"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseOne"
+                            aria-expanded="false"
+                            aria-controls="collapseOne"
+                        >
+                            Soil Nutrients Monitoring and Precision Agriculture
+                        </button>
+                    </h2>
+                </div>
 
-        <div class="base-content">
-            <div class="container pb-4 bg-light">
-                <div class="section-title">Resources</div>
-                <div class="accordion" id="accordionExample">
-                    <div class="card">
-                        <div class="card-header" id="headingEight">
-                            <h2 class="mb-0">
-                                <button
-                                    class="btn btn-link btn-block text-left"
-                                    type="button"
-                                    data-toggle="collapse"
-                                    data-target="#collapseEight"
-                                    aria-expanded="true"
-                                    aria-controls="collapseEight"
-                                >
-                                    FOSSEE and Spoken Tutorial
-                                </button>
-                            </h2>
-                        </div>
+                <div
+                    id="collapseOne"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordionExample"
+                >
+                    <div class="card-body">
+                        <p class="text-info">
+                            1. <a
+                                class="text-info"
+                                href="https://www.youtube.com/watch?v=pgGpuws7f9o"
+                                >Water Your Garden with IoT - Soil Moisture
+                                Sensors</a
+                            ><br />
+                            2. <a
+                                class="text-info"
+                                href="https://www.youtube.com/watch?v=PTJ9sAk2c2I"
+                                >New Blynk IOT Smart Plant Monitoring System</a
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button
+                            class="btn btn-link btn-block text-left collapsed"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="collapseTwo"
+                        >
+                            Weather Station
+                        </button>
+                    </h2>
+                </div>
+                <div
+                    id="collapseTwo"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordionExample"
+                >
+                    <div class="card-body">
+                        <p class="text-info">
+                            1. <a
+                                class="text-info"
+                                href="https://www.youtube.com/watch?v=snCp0TqrER4"
+                                >DIY Smart Home Weather Station - Wind, Rain,
+                                Temperature, Pressure, Humidity, Ligh</a
+                            ><br />
+                            2. <a
+                                class="text-info"
+                                href="https://www.youtube.com/watch?v=l3-y371RlI4"
+                                >Arduino Wireless Weather Station Project</a
+                            ><br />
+                            3. <a
+                                class="text-info"
+                                href="https://www.youtube.com/watch?v=Nw392q1Sg4M"
+                                >LoRa Based Wireless Weather Station using
+                                Arduino and ESP32</a
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button
+                            class="btn btn-link btn-block text-left collapsed"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseThree"
+                            aria-expanded="false"
+                            aria-controls="collapseThree"
+                        >
+                            Air Quality and Noise Pollution Level
+                        </button>
+                    </h2>
+                </div>
+                <div
+                    id="collapseThree"
+                    class="collapse"
+                    aria-labelledby="headingThree"
+                    data-parent="#accordionExample"
+                >
+                    <div class="card-body">
+                        <p class="text-info">
+                            1. <a
+                                class="text-info"
+                                href="https://www.youtube.com/watch?v=SCXteaUVICw"
+                                >Air Quality Monitoring and Alert System using
+                                Arduino with MQ135</a
+                            ><br />
+                            2. <a
+                                class="text-info"
+                                href="https://www.youtube.com/watch?v=p3-0mWkOFBk"
+                                >IoT based Noise & Air quality Monitoring using
+                                blynk IoT | New Automation Tab update in Blynk</a
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingSeven">
+                    <h2 class="mb-0">
+                        <button
+                            class="btn btn-link btn-block text-left collapsed"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseSeven"
+                            aria-expanded="false"
+                            aria-controls="collapseSeven"
+                        >
+                            Asset Tracking
+                        </button>
+                    </h2>
+                </div>
+                <div
+                    id="collapseSeven"
+                    class="collapse"
+                    aria-labelledby="headingSeven"
+                    data-parent="#accordionExample"
+                >
+                    <div class="card-body">
+                        <p class="text-info">
+                            1. <a
+                                class="text-info"
+                                href="https://www.youtube.com/watch?v=zFn487G2pY8"
+                                >IOT Asset Tracking System</a
+                            ><br />
+                            2. <a
+                                class="text-info"
+                                href="https://www.youtube.com/watch?v=rdvZpwV9A18"
+                                >Arduino Gps And Gsm Based location Tracking
+                                System | Women Safety Device Small Version</a
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-                        <div
-                            id="collapseEight"
-                            class="collapse show"
-                            aria-labelledby="headingEight"
-                            data-parent="#accordionExample"
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                        <button
+                            class="btn btn-link btn-block text-left collapsed"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseFour"
+                            aria-expanded="false"
+                            aria-controls="collapseFour"
                         >
-                            <div class="card-body">
-                                <p class="text-info">
-                                    1. <a
-                                        class="text-info"
-                                        href="https://spoken-tutorial.org/tutorial-search/?search_foss=Arduino&search_language=English"
-                                        >Arduino Tutorial Series by Spoken
-                                        Tutorial</a
-                                    ><br />
-                                    2. <a
-                                        class="text-info"
-                                        href="https://floss-arduino.fossee.in/"
-                                        >FLOSS-Arduino books teach Arduino
-                                        control via open-source software</a
-                                    >
-                                </p>
-                            </div>
-                        </div>
+                            Global Warming
+                        </button>
+                    </h2>
+                </div>
+                <div
+                    id="collapseFour"
+                    class="collapse"
+                    aria-labelledby="headingFour"
+                    data-parent="#accordionExample"
+                >
+                    <div class="card-body">
+                        <p class="text-info">
+                            1. <a
+                                class="text-info"
+                                href="https://www.youtube.com/watch?v=0SulU4QM334"
+                                >Smart Grid: How IoT fights climate change
+                                (Kelsey Breseman)</a
+                            >
+                        </p>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h2 class="mb-0">
-                                <button
-                                    class="btn btn-link btn-block text-left collapsed"
-                                    type="button"
-                                    data-toggle="collapse"
-                                    data-target="#collapseOne"
-                                    aria-expanded="false"
-                                    aria-controls="collapseOne"
-                                >
-                                    Soil Nutrients Monitoring and Precision
-                                    Agriculture
-                                </button>
-                            </h2>
-                        </div>
+                </div>
+            </div>
 
-                        <div
-                            id="collapseOne"
-                            class="collapse"
-                            aria-labelledby="headingOne"
-                            data-parent="#accordionExample"
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h2 class="mb-0">
+                        <button
+                            class="btn btn-link btn-block text-left collapsed"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseFive"
+                            aria-expanded="false"
+                            aria-controls="collapseFive"
                         >
-                            <div class="card-body">
-                                <p class="text-info">
-                                    1. <a
-                                        class="text-info"
-                                        href="https://www.youtube.com/watch?v=pgGpuws7f9o"
-                                        >Water Your Garden with IoT - Soil
-                                        Moisture Sensors</a
-                                    ><br />
-                                    2. <a
-                                        class="text-info"
-                                        href="https://www.youtube.com/watch?v=PTJ9sAk2c2I"
-                                        >New Blynk IOT Smart Plant Monitoring
-                                        System</a
-                                    >
-                                </p>
-                            </div>
-                        </div>
+                            Disaster Management
+                        </button>
+                    </h2>
+                </div>
+                <div
+                    id="collapseFive"
+                    class="collapse"
+                    aria-labelledby="headingFive"
+                    data-parent="#accordionExample"
+                >
+                    <div class="card-body">
+                        <p class="text-info">
+                            1. <a
+                                class="text-info"
+                                href="https://www.youtube.com/watch?v=dYG7GsqcCMM"
+                                >Geospatial data for disaster management at ITC</a
+                            >
+                        </p>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h2 class="mb-0">
-                                <button
-                                    class="btn btn-link btn-block text-left collapsed"
-                                    type="button"
-                                    data-toggle="collapse"
-                                    data-target="#collapseTwo"
-                                    aria-expanded="false"
-                                    aria-controls="collapseTwo"
-                                >
-                                    Weather Station
-                                </button>
-                            </h2>
-                        </div>
-                        <div
-                            id="collapseTwo"
-                            class="collapse"
-                            aria-labelledby="headingTwo"
-                            data-parent="#accordionExample"
-                        >
-                            <div class="card-body">
-                                <p class="text-info">
-                                    1. <a
-                                        class="text-info"
-                                        href="https://www.youtube.com/watch?v=snCp0TqrER4"
-                                        >DIY Smart Home Weather Station - Wind,
-                                        Rain, Temperature, Pressure, Humidity,
-                                        Ligh</a
-                                    ><br />
-                                    2. <a
-                                        class="text-info"
-                                        href="https://www.youtube.com/watch?v=l3-y371RlI4"
-                                        >Arduino Wireless Weather Station
-                                        Project</a
-                                    ><br />
-                                    3. <a
-                                        class="text-info"
-                                        href="https://www.youtube.com/watch?v=Nw392q1Sg4M"
-                                        >LoRa Based Wireless Weather Station
-                                        using Arduino and ESP32</a
-                                    >
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h2 class="mb-0">
-                                <button
-                                    class="btn btn-link btn-block text-left collapsed"
-                                    type="button"
-                                    data-toggle="collapse"
-                                    data-target="#collapseThree"
-                                    aria-expanded="false"
-                                    aria-controls="collapseThree"
-                                >
-                                    Air Quality and Noise Pollution Level
-                                </button>
-                            </h2>
-                        </div>
-                        <div
-                            id="collapseThree"
-                            class="collapse"
-                            aria-labelledby="headingThree"
-                            data-parent="#accordionExample"
-                        >
-                            <div class="card-body">
-                                <p class="text-info">
-                                    1. <a
-                                        class="text-info"
-                                        href="https://www.youtube.com/watch?v=SCXteaUVICw"
-                                        >Air Quality Monitoring and Alert System
-                                        using Arduino with MQ135</a
-                                    ><br />
-                                    2. <a
-                                        class="text-info"
-                                        href="https://www.youtube.com/watch?v=p3-0mWkOFBk"
-                                        >IoT based Noise & Air quality
-                                        Monitoring using blynk IoT | New
-                                        Automation Tab update in Blynk</a
-                                    >
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingSeven">
-                            <h2 class="mb-0">
-                                <button
-                                    class="btn btn-link btn-block text-left collapsed"
-                                    type="button"
-                                    data-toggle="collapse"
-                                    data-target="#collapseSeven"
-                                    aria-expanded="false"
-                                    aria-controls="collapseSeven"
-                                >
-                                    Asset Tracking
-                                </button>
-                            </h2>
-                        </div>
-                        <div
-                            id="collapseSeven"
-                            class="collapse"
-                            aria-labelledby="headingSeven"
-                            data-parent="#accordionExample"
-                        >
-                            <div class="card-body">
-                                <p class="text-info">
-                                    1. <a
-                                        class="text-info"
-                                        href="https://www.youtube.com/watch?v=zFn487G2pY8"
-                                        >IOT Asset Tracking System</a
-                                    ><br />
-                                    2. <a
-                                        class="text-info"
-                                        href="https://www.youtube.com/watch?v=rdvZpwV9A18"
-                                        >Arduino Gps And Gsm Based location
-                                        Tracking System | Women Safety Device
-                                        Small Version</a
-                                    >
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+            </div>
 
-                    <div class="card">
-                        <div class="card-header" id="headingFour">
-                            <h2 class="mb-0">
-                                <button
-                                    class="btn btn-link btn-block text-left collapsed"
-                                    type="button"
-                                    data-toggle="collapse"
-                                    data-target="#collapseFour"
-                                    aria-expanded="false"
-                                    aria-controls="collapseFour"
-                                >
-                                    Global Warming
-                                </button>
-                            </h2>
-                        </div>
-                        <div
-                            id="collapseFour"
-                            class="collapse"
-                            aria-labelledby="headingFour"
-                            data-parent="#accordionExample"
+            <div class="card">
+                <div class="card-header" id="headingSix">
+                    <h2 class="mb-0">
+                        <button
+                            class="btn btn-link btn-block text-left collapsed"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseSix"
+                            aria-expanded="false"
+                            aria-controls="collapseSix"
                         >
-                            <div class="card-body">
-                                <p class="text-info">
-                                    1. <a
-                                        class="text-info"
-                                        href="https://www.youtube.com/watch?v=0SulU4QM334"
-                                        >Smart Grid: How IoT fights climate
-                                        change (Kelsey Breseman)</a
-                                    >
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header" id="headingFive">
-                            <h2 class="mb-0">
-                                <button
-                                    class="btn btn-link btn-block text-left collapsed"
-                                    type="button"
-                                    data-toggle="collapse"
-                                    data-target="#collapseFive"
-                                    aria-expanded="false"
-                                    aria-controls="collapseFive"
-                                >
-                                    Disaster Management
-                                </button>
-                            </h2>
-                        </div>
-                        <div
-                            id="collapseFive"
-                            class="collapse"
-                            aria-labelledby="headingFive"
-                            data-parent="#accordionExample"
-                        >
-                            <div class="card-body">
-                                <p class="text-info">
-                                    1. <a
-                                        class="text-info"
-                                        href="https://www.youtube.com/watch?v=dYG7GsqcCMM"
-                                        >Geospatial data for disaster management
-                                        at ITC</a
-                                    >
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header" id="headingSix">
-                            <h2 class="mb-0">
-                                <button
-                                    class="btn btn-link btn-block text-left collapsed"
-                                    type="button"
-                                    data-toggle="collapse"
-                                    data-target="#collapseSix"
-                                    aria-expanded="false"
-                                    aria-controls="collapseSix"
-                                >
-                                    Vehicle Detection and Intelligent
-                                    Transportation
-                                </button>
-                            </h2>
-                        </div>
-                        <div
-                            id="collapseSix"
-                            class="collapse"
-                            aria-labelledby="headingSix"
-                            data-parent="#accordionExample"
-                        >
-                            <div class="card-body">
-                                <p class="text-info">
-                                    1. <a
-                                        class="text-info"
-                                        href="https://www.youtube.com/watch?v=H_JhcBTgwPo"
-                                        >Intelligent Transport Systems made in
-                                        KOREA English Version 22'</a
-                                    ><br />
-                                    2. <a
-                                        class="text-info"
-                                        href="https://www.youtube.com/watch?v=Q8Cn47L8FRQ"
-                                        >Connected Vehicle: The Future of
-                                        Transportation</a
-                                    >
-                                </p>
-                            </div>
-                        </div>
+                            Vehicle Detection and Intelligent Transportation
+                        </button>
+                    </h2>
+                </div>
+                <div
+                    id="collapseSix"
+                    class="collapse"
+                    aria-labelledby="headingSix"
+                    data-parent="#accordionExample"
+                >
+                    <div class="card-body">
+                        <p class="text-info">
+                            1. <a
+                                class="text-info"
+                                href="https://www.youtube.com/watch?v=H_JhcBTgwPo"
+                                >Intelligent Transport Systems made in KOREA
+                                English Version 22'</a
+                            ><br />
+                            2. <a
+                                class="text-info"
+                                href="https://www.youtube.com/watch?v=Q8Cn47L8FRQ"
+                                >Connected Vehicle: The Future of Transportation</a
+                            >
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="footer-content">
-            <div class="footer-content">
-                <section id="footer" class="site-footer">
-                    <footer class="container-fluid py-5 site-footer pl-5 pr-4">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <h5>About</h5>
-                                <ul class="list-unstyled text-small">
-                                    <li>
-                                        <a
-                                            class="text-muted"
-                                            href="https://www.iitb.ac.in/"
-                                            target="_blank"
-                                            ><span style="color: white;"
-                                                >IIT Bombay</span
-                                            ></a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a
-                                            class="text-muted"
-                                            href="https://fossee.in/"
-                                            target="_blank"
-                                            ><span style="color: white;"
-                                                >FOSSEE</span
-                                            ></a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a
-                                            class="text-muted"
-                                            href="https://www.iittnif.org"
-                                            target="_blank"
-                                            ><span style="color: white;"
-                                                >IITTNiF</span
-                                            ></a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a
-                                            class="text-muted"
-                                            href="https://spoken-tutorial.org"
-                                            target="_blank"
-                                            ><span style="color: white;"
-                                                >Spoken Tutorial</span
-                                            ></a
-                                        >
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-3">
-                                <h5>Resources</h5>
-                                <ul class="list-unstyled text-small">
-                                    <li>
-                                        <a
-                                            class="text-muted"
-                                            href="https://qgis.org/en/site/forusers/download"
-                                            target="_blank"
-                                            ><span style="color: black;"
-                                                >QGIS</span
-                                            ></a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a
-                                            class="text-muted"
-                                            href="https://spoken-tutorial.org/tutorial-search/?search_foss=QGIS&search_language=English"
-                                            target="_blank"
-                                            ><span style="color: black;"
-                                                >Spoken Tutorials - FOSSEE -
-                                                QGIS</span
-                                            ></a
-                                        >
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--  <div class="col-sm-3">
-               <h5>Socail Media</h5>
-               <ul class="list-unstyled text-small">
-                  <li><a href="https://www.facebook.com/FOSSEENMEICT/" class="facebook text-white" target="_blank"><i
-                     class="fab fa-facebook"></i></a>
-                  </li><br>
-                  <li><a href="https://twitter.com/FOSSEENMEICT/" class="twitter" target="_blank"><i
-                     class="fab fa-twitter"></i></a>
-                  </li>
-               </ul>
-            </div>
-            <div class="col-sm-3"> -->
-                            <small class="d-block mb-3 text-muted">
-                                <a
-                                    rel="license"
-                                    href="http://creativecommons.org/licenses/by-sa/4.0/"
-                                    ><img
-                                        alt="Creative Commons License"
-                                        style="border-width:0"
-                                        src="https://iitb-isro-aicte-mapathon.fossee.in/static/cms/uploads/images/88x31.png"
-                                    /></a
-                                ><br /><span style="color: black;"
-                                    >This work is licensed under a
-                                </span><a
-                                    rel="license"
-                                    style="color:black"
-                                    href="http://creativecommons.org/licenses/by-sa/4.0/"
-                                    >Creative Commons Attribution-ShareAlike 4.0
-                                    International License
-                                </a>.
-                            </small>
-                        </div>
-                    </footer>
-                </section>
-            </div>
-        </div>
-    </body>
-</html>
+    </div>
+</BaseLayout>

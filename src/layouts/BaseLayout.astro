@@ -1,0 +1,37 @@
+---
+import Meta from "../components/Meta.astro";
+import SocialMedia from "../components/SocialMedia.astro";
+import TopBanner from "../components/TopBanner.astro";
+import Navigation from "../components/Navigation.astro";
+import Poster from "../components/Poster.astro";
+import Footer from "../components/Footer.astro";
+
+const { showPoster } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <Meta />
+    </head>
+
+    <body>
+        <SocialMedia />
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top"
+            ><i class="fa fa-angle-up" aria-hidden="true"></i></button
+        >
+
+        <TopBanner />
+
+        <Navigation />
+
+        {showPoster && <Poster />}
+
+        <div class="base-content">
+            <slot />
+        </div>
+
+        <Footer />
+    </body>
+</html>
