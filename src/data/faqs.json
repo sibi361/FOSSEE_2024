@@ -1,0 +1,98 @@
+[
+    {
+      "question": "Will the winners of the \"National OpenHardware-IoT Geospatial Hackathon 2024 receive any refund or is there any prize/ award given?",
+      "answer": "As this is a national-level activity, supported through the FOSSEE project, National Mission on Education through ICT (NMEICT), the prospective winners shall be given 'prizes/awards ONLY', based on their performance, category-wise (themes). The winners shall also be eligible for applying to the coveted \"IIT Bombay FOSSEE Geospatial + OpenHardware Internship & Summer Fellowship 2024\", and other flagship activities."
+    },
+    {
+      "question": "Is there any filtration before starting the hackathon?",
+      "answer": "Yes, there is a filtration process in place which shall review all the proposals before allowing the individual participant/ team(s) into the main phase of the \"National Level OpenHardware-IoT based Geospatial Hackathon\". The aspirants must (i) register themselves/ their team, (ii). Upload their proposal, (iii). The core organizing committee (IIT Bombay FOSSEE GIS/OSHW + IITTNiF + ICFOSS) will evaluate the proposals, (iv). Accepted proposals shall be informed via email.\n\nNote: The project proposals are reviewed by the core committee and shall ensure their alignment with the hackathon's theme and objectives. "
+    },
+    {
+      "question": "Can we use any proprietary hardware for other components if the open source is not available for that item?",
+      "answer": " Participants are permitted to utilize proprietary hardware or components in the absence of open-source alternatives. This should not exceed 40%. However, they (participating team(s)/ individuals) must adhere to any licensing agreements or restrictions related to proprietary technologies. <b>It is to be noted and essential that all designs and code submitted must adhere to the CC-BY-SA license requirements.</b>"
+    },
+    {
+      "question": "What are the judging criteria for project evaluation?",
+      "answer": "The judging criteria typically include factors such as novelty, methodology, innovation, technical implementation, usability, impact, and presentation (report) quality. Each project is evaluated based on these criteria to determine the winners.\n\nNote: The project proposal and final submissions must adhere to the mandates laid by the \"IIT Bombay FOSSEE GIS team\" at all times. By participating in the \"National Level OpenHardware-IoT based Geospatial Hackathon\" the teams agree that the decision taken by the 'Core Organizing Committee' and/or the 'IIT Bombay FOSSEE GIS & OSHW' team(s) shall be final and non-appealable."
+    },
+    {
+      "question": "Is there any format for submitting reports and presentations?",
+      "answer": "YES! The report and presentation template shall be shared by the core committee during the 'Orientation phase'."
+    },
+    {
+      "question": "How will the hackathon be conducted? Is it an online event or will there be physical venues?",
+      "answer": "The main phase of the \"National Level OpenHardware-IoT based Geospatial Hackathon\" will exclusively take place in 'ONLINE MODE' only.\n\n Note: The 'Grand Finale' of the \"National Level OpenHardware-IoT based Geospatial Hackathon\" shall be conducted in offline mode. For the 'Grand Finale' only the teams shortlisted for the final stage/ round will be invited to participate."
+    },
+    {
+      "question": "What level of expertise in IoT and geospatial technologies is expected from participants?",
+      "answer": "Participants/ Team(s) with varying levels of expertise in IoT and geospatial technologies are welcome to participate. The hackathon shall serve as a platform for beginners, intermediate, and advanced-level participants, with lots of opportunities to learn and collaborate.\n\nNote: The proposals for the \"National Level OpenHardware-IoT based Geospatial Hackathon 2024\" can be submitted under two broad categories,\n\n(i). Purely 'IoT' based (OR)\n\n (ii). A blend of GIS + IoT (Special prizes/ awards are to be given for this category)"
+    },
+    {
+      "question": "Can participants use pre-existing IoT devices or hardware prototypes for their projects, or do they need to develop new solutions from scratch?",
+      "answer": "The participants/ participating team(s) are encouraged to develop their solutions/ prototypes from scratch. But, to spread awareness about \"OpenSource Hardware-IoT' and 'GIS' technologies in all domains, we encourage the students cutting across domains to give it a try. Hence, we do allow participants to use pre-existing IoT devices or hardware prototypes for their projects, as long as they meet the project requirements and objectives. All designs and code submitted must adhere to the CC-BY-SA license requirements.\n\nNote: The decision of the 'Core Organizing Committee' of the National Level OpenHardware-IoT based Geospatial Hackathon, and/or the 'IIT Bombay FOSSEE GIS & OSHW' team(s) shall be final and non-appealable, in all circumstances."
+    },
+    {
+      "question": "Are there any specific industry sectors or use cases that the hackathon aims to address through the integration of IoT and geospatial technologies?",
+      "answer": "The 'National Level OpenHardware-IoT based Geospatial Hackathon' aims to promote an interdisciplinary approach in cracking solution(s) for the proposed 'problem statements' Even though the 'core organizing committee' doesn't confine the scope to scope to specific industries or use cases, rather it encourages participants to 'consider' focusing on scenarios like smart cities, environmental monitoring, precision agriculture, transportation, healthcare, transport, logistics, weather forecast, rural development, green energy and sustainability, disaster management. etc. However, the exact focus areas may vary depending on the organizers' goals and themes."
+    },
+    {
+      "question": "Are there any opportunities for participants to contribute to open-source projects or initiatives as part of their hackathon submissions?",
+      "answer": "YES! participants may have opportunities to contribute to open-source projects or initiatives related to IoT and/or Geospatial (GIS) technologies as part of the \"National Level OpenHardware-IoT based Geospatial Hackathon\". The 'qualified submissions' shall be published as open-source projects on the national project's website. Collaboration with existing open-source communities shall/may be encouraged or facilitated by the 'Core Organing Committee'."
+    },
+    {
+      "question": "How will the hackathon support participants who may be new to IoT or geospatial technologies and require additional guidance or resources?",
+      "answer": "The 'Core Organizing Committee' of the National Level OpenHardware-Iot based Geospatial Hackathon will conduct 'focused' workshops, mentoring sessions, orientation (state-wise), online resources such as the award-winning 'SpokenTutorial' on relevant technologies, etc.\n\nNote: The main emphasis here is to ensure that the resources deployed work as a support system for participants to learn and enhance their (IoT, and GIS) skills throughout the event."
+    },
+    {
+      "question": "Will there be any post-hackathon support or mentorship opportunities for participants looking to further develop their projects?",
+      "answer": "YES! The winners, and even enthusiastic participants shall get a chance to apply for some of India's most coveted internships, fellowships, product development, etc kind of opportunities. To know more about the initiatives of the \"IIT Bombay FOSSEE GIS\" team, please visit https://www.iitb.ac.in/event/iit-bombay-fossee-gis-activities-calendar-year-2024. There are interesting opportunities given by our organizing partner the \"IIT Tirupati Navavishkar I-Hub Foundation\" which is IIT Tirupati's Technology Innovation Hub (TIH) specializes in 'positioning and precision technologies'. Participants with good ideas and/or geospatial products nearing completion or in the advanced stage of development can explore possibilities for incubating themselves as start-up(s)."
+    },
+    {
+      "question": "Can participants submit multiple projects, and if so, are there any limitations on the number of submissions per team?",
+      "answer": "YES! But make sure you the team leader is not the same person. There is 'NO' limitation on the number of teams.\n\nNote: Institutions fielding more than (valid) 25 teams can assign a SPOC (Single Point of Contact - SPOC) for obtaining dedicated + direct support from the committee."
+    },
+    {
+      "question": "Are there any specific environmental or social impact considerations that participants should take into account when designing their projects?",
+      "answer": "YES! participants are encouraged to consider aligning their project proposal in line with the environmental and social impact while designing/ evolving their problem statement(s).\n\nNote: Solutions that promote sustainability, resilience, inclusivity, and positive societal outcomes are often valued by the 'Core Organizing/Evaluation Committee\". Please refer to \"IIT Bombay FOSSEE GIS Mandates\" on https://iot-gis-hackathon.fossee.in/ and the \"United Nations Development Programme's SDGs\" on https://www.undp.org/sustainable-development-goals."
+    },
+    {
+      "question": "Will the hackathon provide any resource(s) for participants to access geospatial datasets or learning materials?",
+      "answer": "YES! Please refer FAQ #12"
+    },
+    {
+      "question": "How can participants stay updated on the latest announcements and developments related to the hackathon?",
+      "answer": "Please keep checking the official website of the \"National Level OpenHardware-IoT based Geospatial Hackathon\" website (URL: https://iot-gis-hackathon.fossee.in/) to get recent updates.\n\nNote: All essential communications will be sent by the core committee through the following Email IDs. Please add them to your 'contact list'.\n\n(i). no-reply@fossee.org\n\n(ii). mohamedkasim@iitb.ac.in; rajesh@cse.iitb.ac.in"
+    },
+    {
+      "question": "Are there any specific hardware or software platforms that participants are encouraged to use?",
+      "answer": "While participants are generally free to choose the hardware and software platforms that best suit their project requirements, organizers may recommend or provide access to specific platforms, tools, or technologies to facilitate project development and integration, based on their project proposal."
+    },
+    {
+      "question": "Are there any specific requirements for project documentation and presentation?",
+      "answer": "YES! participants are typically required to adhere to specific guidelines for project documentation/ report and presentation, per the template issued. Please refer FAQ #6."
+    },
+    {
+      "question": "Will there be any workshops or training sessions during the hackathon to help participants develop their technical skills?",
+      "answer": "YES! Please refer FAQ #12"
+    },
+    {
+      "question": "Does the core organizing committee provide any 'performance summary' to a college that has registered with many teams?",
+      "answer": "YES! All the Universities/ Colleges/ Educational Institutions that have IQAC (NAAC/NIRF/NBA purposes) cells, and have registered with more than 25 teams can write to mohamedkasim@iitb.ac.in for the performance summary letter after the results are declared."
+    },
+    {
+      "question": "Will the participating Institutions be eligible for the 'National Geospatial Awards' organized by the IIT Bombay FOSSEE GIS team?",
+      "answer": "YES! All participating institutions can apply for the annual 'National Geospatial Awards (2024)' scheduled to be conducted on September 15, 2024. There are various categories, and event state-specific awards listed."
+    },
+    {
+      "question": "Can an Indian citizen studying at some foreign university apply for this hackathon?",
+      "answer": "YES! Indian Citizens pursuing their studies abroad can register. They shall get 'e-certificates' if they emerge as winners, but they (Indian students studying in foreign universities) won't be eligible for cash awards as transferring honoraria outside India is not allowed as per the policy laid by the funding agency/ prize sponsor."
+    },
+    {
+      "question": "Can a faculty/ research scholar/ staff participate in the hackathon?",
+      "answer": "YES! Students, Faculty, Research Scholars, Staff, and Project Staff from any UGC/ AICTE/ Institutes of National importance/ NMC/ NLB/ AIU/ Government of India or State Government recognized Institutions/ organization can participate in the \"National Level OpenHardware-IoT based Geospatial Hackathon\"."
+    },
+    {
+      "question": "Whom should we contact for any partnership related query?",
+      "answer": "For all partnership and sponsorship-related queries, please write to Mr. Mohamed Kasim Khan, National Coordinator - FOSSEE(GIS), IIT Bombay at mohamedkasim@iitb.ac.in. As we are in the process of identifying nodal agencies (DHE. DTE, Technical Univeristy, Skill Development Body, etc) in each state and union territory, the officers concerned can directly write to us."
+    }
+  ]
